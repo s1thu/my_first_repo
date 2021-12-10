@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="../Font-Awesome/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Card Design 2</title>
+    <style>
+      .card {
+        background-color: #42515a;
+        max-width: 350px;
+
+        border: 2px solid;
+        margin: 100px auto;
+        font-size: 20px;
+        border-radius: 20px;
+        text-align: center;
+      }
+      .card-header {
+        position: relative;
+        height: 48px;
+      }
+      .card-header img {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        border: 5px solid #c74385;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        transition: 0.5s;
+      }
+      .card-header img:hover {
+        width: 160px;
+        height: 160px;
+        border: 8px solid #c74385;
+      }
+      a {
+        text-decoration: none;
+      }
+      .card-body {
+        padding: 10px 40px;
+      }
+      .card-body h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #c74385;
+        transition: 0.5s;
+      }
+      .card-body h3:hover {
+        margin-top: 30px;
+        font-size: 30px;
+        color: #c74385;
+      }
+      .card-body a {
+        color: #eef;
+        transition: 0.5s;
+      }
+      .card-body a:hover {
+        font-size: 22px;
+      }
+      .card-body p {
+        margin-top: 15px;
+      }
+      .social-links {
+        margin: 15px 0;
+        width: 100%;
+        height: 50px;
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+      }
+      .social-links .social-icon {
+        width: 40px;
+        height: 40px;
+        background-color: #c74385;
+        color: #eef;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        transition: 0.3s;
+      }
+      .social-links .social-icon:hover {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+      }
+      .card-footer {
+        height: 50px;
+        background-color: #c74385;
+        margin-top: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 15px 15px;
+      }
+      .card-footer p {
+        font-size: 1rem;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <img src="./img/profile-image-placeholder.jpg" />
+      </div>
+      <div class="card-body">
+        <h3>Sithu Win</h3>
+        <a href="">s1thu.w1n.5601@gmail.com</a>
+        <p>Developer | Coder</p>
+      </div>
+      <div class="social-links">
+        <a href="#" class="fab fa-github social-icon"></a>
+        <a href="#" class="fab fa-twitter social-icon"></a>
+        <a href="#" class="fab fa-youtube social-icon"></a>
+        <a href="#" class="fab fa-linkedin social-icon"></a>
+      </div>
+      <div class="card-footer">
+        <p><span>120K</span>Followers | <span>120K</span>Following</p>
+      </div>
+    </div>
+  </body>
+</html>
