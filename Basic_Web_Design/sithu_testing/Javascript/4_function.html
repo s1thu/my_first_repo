@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <body>
+    <script>
+      //Function Statement
+      function sithu() {
+        return "MY name is Sithu win";
+      }
+      function getBirthyear(name = "sithu", currentage = 20) {
+        let birthyear = 2021 - currentage;
+        let result = `${name} was born in ${birthyear}`;
+        return result;
+      }
+
+      function adding_name(fName = "sithu", lName = "win") {
+        let name = fName + lName;
+        let result = `My name is ${name}`;
+        return result;
+      }
+
+      //Function expression
+      let run = function () {
+        return "this is run";
+      };
+      console.log(run());
+
+      //IIFE
+      (function () {
+        console.log("this is IIFE");
+      })();
+
+      //Function invoke another function
+      function add() {
+        return run();
+      }
+    </script>
+  </body>
+</html>

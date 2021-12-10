@@ -1,0 +1,33 @@
+.grid-container {
+  display: grid;
+  width: 700px;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 10px;
+  grid-auto-rows: 50px;
+}
+.box1 {
+  background: red;
+}
+.box2 {
+  background: blue;
+}
+.box3 {
+  background: pink;
+}
+.box4 {
+  background: green;
+}
+.box5 {
+  background: yellowgreen;
+}
+.box6 {
+  background: gray;
+}
+.box7 {
+  background: yellow;
+}
+.box8 {
+  background: rgb(37, 231, 222);
+}

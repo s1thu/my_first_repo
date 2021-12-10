@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   
+    <style>
+
+        *{
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body{
+            padding: 15px;
+            background-color: rgb(250, 250, 250);
+        }
+
+        .card{
+            width: 300px;
+            /* border: 1px solid black; */
+            background-color: #fff;
+            vertical-align: top;
+            border-radius: 10px;
+            display: inline-block;
+            overflow: hidden;
+            margin-right: 20px;
+            box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+        }
+
+        .card-body{
+            padding: 15px;
+        }
+
+        .card-title{
+            margin-top: 0;
+        font-size: 18px;
+        font-weight: bold;
+        }
+
+        .card-paragraph{
+            margin-bottom: 0;
+            color: #767676;
+        }
+
+        .card-img{
+            width: 100%;
+            display: block;
+        }
+
+        .card-icon{
+            margin: 30px 0;
+        }
+
+        .text-center{
+            text-align: center;
+        }
+
+        .text-right{
+            text-align: right;
+        }
+        .add-to-cart{
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-top: -20px;
+            position: relative;
+            margin-right: 15px;
+        }
+
+        .see-more{
+            width: 150px;
+            height: 40px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            display: block;
+            margin: auto;
+            margin-bottom: -20px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="card">
+        <div class="card-body">
+            <p class="card-title">Min Ga Lar Par</p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet onsectetur elit consectetur elit. Voluptatem in modi.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body text-center">
+            <p class="card-title">Min Ga Lar Par</p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet onsectetur elit consectetur elit. Voluptatem in modi.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-body text-right">
+            <p class="card-title">Min Ga Lar Par</p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet onsectetur elit consectetur elit. Voluptatem in modi.
+            </p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="card">
+        <img src="./images/poe-landscape-3.jpg" class="card-img" alt="">
+        <div class="card-body">
+            <p class="card-title">My Dream</p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet onsectetur elit consectetur elit. Voluptatem in modi.
+            </p>
+        </div>
+    </div>
+
+    <div class="card" style="overflow: visible;">
+        <div class="card-body text-center">
+            <i class="card-icon fas fa-home fa-5x"></i>
+            <p class="card-title">Min Ga Lar Par</p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet onsectetur elit consectetur elit. Voluptatem in modi.
+            </p>
+        </div>
+        <button class="see-more">See More</button>
+    </div>
+
+    <div class="card">
+        <img src="./images/macbook.jpg" class="card-img" alt="">
+        <button class="add-to-cart">
+            <i class="fas fa-plus"></i>
+        </button>
+        <div class="card-body">
+            <p class="card-title">New macbook pro</p>
+            <p class="card-paragraph">
+                Lorem ipsum dolor sit amet onsectetur elit consectetur elit. Voluptatem in modi.
+            </p>
+        </div>
+    </div>
+    
+        
+
+</body>
+</html>

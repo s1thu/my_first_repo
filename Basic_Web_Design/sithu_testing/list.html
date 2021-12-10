@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists</title>
+    <style>
+      ul li {
+        list-style-type: none;
+        margin-bottom: 10px;
+        background-color: #ddd;
+        padding: 10px 15px;
+        width: 150px;
+      }
+      ul li:first-child:hover {
+        background-color: #6661;
+        transition: 0.5s;
+        color: red;
+        border-left: 5px solid black;
+      }
+      ul li:last-child.active {
+        border-left: 5px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lists</h1>
+    <ul>
+      <li>ManChester United</li>
+      <li>ManChester City</li>
+      <li>Chelsea</li>
+      <li class="active">Arsenal</li>
+    </ul>
+  </body>
+</html>

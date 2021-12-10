@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+</head>
+<body>
+    <h1>min ga lar par <i class="fas fa-home"></i> </h1>
+    <p class="animate__animated animate__fadeInUp">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum qui sint corporis labore provident veniam omnis, dicta distinctio necessitatibus architecto hic neque ducimus facilis reprehenderit possimus recusandae. Quasi, earum excepturi?
+    </p>
+
+    <script>
+        let arr1 = [1,2,3];
+        // let arr2 = ["a","b","c"];
+
+        // function run(x,y,z){
+        //     return x+y+z;
+        // }
+
+        // function test(x,y){
+        //     return x+y;
+        // }
+
+
+
+        // let result = [...arr1,"abc",...arr2,...arr1];
+        // console.log(result);
+
+        // let myJson = '{"name":"hein htet zan","age":27,"skill":["html","css","js"]}';
+
+        fetch('https://fakestoreapi.com/products/')
+        .then(response => response.json())
+        .then(data => console.log(data));
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script src="./js/shop.js"></script>
+    
+    <script>
+
+        const fruits = ["Banana",  "Apple", "line", "Mango", "Orange", "Lemon", "kiwi"];
+
+        const marks = [40,65,78,34,90,19];
+
+        // let newArr = fruits.map(function(element,index){
+        //     console.log(index+1,element);
+        //     return element+" - "+element.length;
+        // })
+
+        // let newArr = marks.map(function(el){
+        //     return el >= 40 ? "အောင်" : "ကျ";
+        // });
+
+
+        // let newArr = shop.map(function(el){
+        //     return el.title+" - "+el.price;
+        // });
+
+        // let newArr = fruits.filter(function(el){
+        //     console.log(el,el.length);
+        //     return el.length==5;//con
+        // });
+
+        // let newArr = marks.filter(function(el){
+        //     return el>=75;
+        // });
+
+        // let newArr = shop.filter(function(el){
+        //     // console.log(el.price)
+        //     return el.price>150;
+        // });
+        
+
+        // let newArr = shop.find(function(el){
+        //     console.log(el);
+        //     return el.id == 3;
+        // });
+
+        // let newArr = fruits.reduce(function(p,c){
+        //     // console.log(p+"-"+c);
+        //     return p+c;
+        // },"");
+
+        // let newArr = marks.every(function(el){
+        //     console.log(el);
+
+        //     return el>=40;
+        // });
+
+        let newArr = fruits.filter(function(el){
+            return el.length > 4;
+        }).join("-")
+
+
+
+
+        console.log(newArr)
+
+
+        
+        
+        // map - loopပတ်, callback က return array အသစ်ထုတ်ပေး
+        // fruit မှ banana ကို banana - 6
+        // mark ကို အောင်မြင်၊ ကျရှုံး တွက်ပေးပါ  ["အောင်","ကျ"]
+        // shop ကို ["ကုန်ပစ္စည်း - စျေးနှုန်း", ...] ပုံစံဖြစ်အောင် ပြောင်းပေးပါ 
+
+        // ်filter - စစ်ထုတ်, con ကိုက်တာတွေ new arr ပြန်
+        // စကားလုံး 6လုံးပါတဲ့ အသီးများ 
+        // ဂုဏ်ထူးမှတ်
+        // $100 ကျော်တန် ကုန်ပစ္စည်းများ
+
+        // ် find ရှာ ၊ တစ်ခုပဲတွေ့ ၊ တွေ့တာနဲ့ ရပ်
+        // id 3 ကုန်ပစ္စည်းကိုရှာ
+
+        // reduce - လျှော့ချ
+        // အမှတ်စုစုပေါင်း
+        // ကုန်ပစ္စည်းတန်ဖိုး စုစုပေါင်း
+
+        // some အချို့
+        // အချို့ဘာသာတွေ ၄၀ အောက်ရောက်လား ? true ကျ : false ဆို အောင်
+        // every အကုန်
+        
+
+    </script>
+
+</body>
+</html>

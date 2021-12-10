@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratical Function</title>
+  </head>
+  <body>
+    <script>
+      //Function invoke another function
+      let arrNum = [];
+      let index = 0;
+      function record(width, high, area) {
+        arrNum[index] = {
+          width,
+          height: high,
+          area,
+        };
+        index++;
+      }
+      function calArea(width, high) {
+        let area = width * high + " " + " Sq Ft";
+        record(width, high, area);
+
+        return area;
+      }
+
+      //Exchange dollars to MMKS
+      let exchange = {
+        usd: 1636,
+        sgd: 1200,
+        euro: 1900,
+      };
+      function caltommk(amount, typeofdollar = "") {
+        let mmk = amount * exchange[typeofdollar];
+        return mmk;
+      }
+      //mmk to dollars
+      function mmktodollars(amount, currency) {
+        let dollars = amount / exchange[currency];
+        return dollars;
+      }
+
+      //to buy fruit
+    </script>
+  </body>
+</html>

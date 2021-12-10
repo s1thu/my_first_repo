@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Montserrat", sans-serif;
+        font-family: "Roboto", sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td,
+      th {
+        border: 1px solid #111111;
+        padding: 10px 15px;
+      }
+      tbody td:first-child {
+        background: #bbb;
+      }
+      #text {
+        text-align: center;
+        background: #eee !important;
+        color: black o !important;
+        font-weight: 600;
+      }
+      tbody td:last-child {
+        text-align: right;
+      }
+      tbody td:nth-child(3) {
+        background: royalblue;
+        color: #000;
+        text-align: center;
+      }
+    </style>
+    <title>Table</title>
+  </head>
+  <body>
+    <h1>Table</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Course</th>
+          <th>Discount</th>
+          <th>Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>HTML&CSS Course</td>
+          <td>100%</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Special WEB Development</td>
+          <td>20%</td>
+          <td>80000</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>WEB Design Development</td>
+          <td>50%</td>
+          <td>50000</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>Full-Stack Web Development</td>
+          <td>10%</td>
+          <td>90000</td>
+        </tr>
+        <tr>
+          <td id="text" colspan="3">Total</td>
+          <td>210000</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

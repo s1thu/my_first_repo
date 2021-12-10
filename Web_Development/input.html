@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="../Font-Awesome/fontawesome-free-5.15.4-web/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Input Forms</title>
+  </head>
+  <body>
+    <h1>Contact Information</h1>
+    <form>
+      <input type="button" value="Start Machine" class="style" /><br />
+      <input
+        type="checkbox"
+        id="subscribeNews"
+        name="subscribe"
+        value="newsletter"
+        checked
+      />
+      <label for="subscribeNews">Subscribe to newsletter?</label>
+      <br />
+      <input type="color" id="head" name="head" />
+      <label for="head">Head</label><br />
+      <label>Start Date:</label>
+      <input
+        type="date"
+        value="2001-06-05"
+        min="2000-01-01"
+        max="2001-12-01"
+      /><br />
+      <input type="email" placeholder="sophie@example.com" /><br />
+      <label>Choose File For Upload</label>
+      <input type="file" accesskey="img/*" />
+      <br />
+      <br />
+      <input type="month" />
+      <br /><br />
+      <input type="number" width="10rem" min="0" max="100" height="1rem" />
+      <br /><br />
+      <fieldset style="width: 30%">
+        <legend>Gender</legend>
+        <input type="radio" name="r1" id="male" checked /><label for="male"
+          >Male</label
+        >
+        <input type="radio" name="r1" id="female" /><label for="female"
+          >FeMale</label
+        >
+        <input type="radio" name="r1" id="other" /><label for="other"
+          >other</label
+        >
+      </fieldset>
+      <br />
+      <input type="range" list="1" />
+      <datalist id="1">
+        <option value="0"></option>
+        <option value="10"></option>
+        <option value="20"></option>
+        <option value="30"></option>
+        <option value="40"></option>
+        <option value="50"></option>
+        <option value="60"></option>
+        <option value="70"></option>
+        <option value="80"></option>
+        <option value="90"></option>
+        <option value="100"></option>
+      </datalist>
+      <br /><br />
+      <input
+        type="search"
+        id="s1"
+        pattern="[A-z]{2}[0-9]{4}"
+        placeholder="2letters followed by 4 numbers"
+      /><button>Search</button> <br /><br />
+      <label for="phone">Enter your phone number:</label>
+
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required
+      />
+
+      <small>Format: 123-456-7890</small>
+      <br /><br />
+      <progress id="progress" max="100" value="70">70%</progress>
+    </form>
+    <hr />
+    <form>
+      <div class="controls">
+        <label for="id">User ID:</label>
+        <input type="text" id="id" name="id" />
+
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+    <hr />
+  </body>
+  <!-- <script>
+    const button = document.querySelector("input");
+    const paragraph = document.querySelector("p");
+    button.addEventListener("click", updateButton);
+    function updateButton() {
+      if (button.value === "Start Machine") {
+        button.value = "Stop Machine";
+        paragraph.textContent = "The machine has started!";
+      } else {
+        button.value = "Start Machine";
+        paragraph.textContent = "The machine is stopped.";
+      }
+    }
+  </script> -->
+</html>

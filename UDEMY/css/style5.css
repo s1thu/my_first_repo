@@ -1,0 +1,28 @@
+.grid-container {
+  background: rgb(235, 219, 219);
+  display: grid;
+  width: 700px;
+  height: 500px;
+  margin: 50px 50px 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.box1 {
+  background: red;
+}
+.box2 {
+  background: green;
+}
+.box3 {
+  background: grey;
+}
+.box4 {
+  background: yellowgreen;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+.box4 > div {
+  background: red;
+}

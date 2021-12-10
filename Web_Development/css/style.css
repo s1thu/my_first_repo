@@ -1,0 +1,64 @@
+#image {
+  height: 200px;
+  width: 200px;
+}
+.style {
+  border: 5px solid red;
+  border-radius: 10px;
+}
+.style:hover {
+  background: yellow;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.controls {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.1rem;
+}
+label {
+  font-weight: 1rem;
+  justify-self: end;
+}
+input[type="reset"] {
+  grid-area: 2/2/3/3;
+}
+input[type="submit"] {
+  grid-area: 3/2/4/3;
+}
+input[type="reset"],
+input[type="submit"] {
+  width: 100px;
+  justify-self: end;
+}
+.label1,
+textarea {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
+.label1 {
+  display: block;
+  margin-bottom: 10px;
+}
+.address {
+  height: 150px;
+  padding: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  max-width: 50%;
+}
+fieldset {
+  width: 50%;
+}

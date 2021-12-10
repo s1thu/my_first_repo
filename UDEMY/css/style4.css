@@ -1,0 +1,21 @@
+.container {
+  background: rgb(235, 230, 230);
+  width: 70%;
+  margin: 50px auto 0px;
+  display: grid;
+  grid-template-columns: fit-content(200px) 1fr;
+  grid-template-rows: 150px 150px;
+}
+.one {
+  background: red;
+  z-index: 1;
+}
+.two {
+  background: green;
+}
+.three {
+  background: grey;
+}
+#four {
+  background: hotpink;
+}

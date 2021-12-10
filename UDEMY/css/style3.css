@@ -1,0 +1,46 @@
+.gridcontainer {
+  display: grid;
+  background: rgb(236, 233, 233);
+  width: 700px;
+  height: 750px;
+  margin: 50px 50px 0;
+  grid-auto-flow: row dense;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 20px;
+  grid-auto-rows: 50px;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.box1 {
+  background: red;
+}
+.box2 {
+  background: blue;
+}
+.box3 {
+  background: pink;
+}
+.box4 {
+  background: green;
+}
+.box5 {
+  background: yellowgreen;
+  grid-row: span 2;
+}
+.box6 {
+  background: gray;
+}
+.box7 {
+  background: yellow;
+  grid-column: span 2;
+}
+.box8 {
+  background: rgb(37, 231, 222);
+}
+.box9 {
+  background: rgb(rgb(141, 63, 63), green, blue);
+}
+.box10 {
+  background: rgb(124, 182, 17);
+}

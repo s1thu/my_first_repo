@@ -1,0 +1,103 @@
+( ) - parentheses
+invoke -call
+console.table();
+-------------------------------------------------
+Variable//
+
+var a= 2 + 7; // this is statement
+var - variable in js 
+a    - name of variable
+2+7 - expression
+
+var
+let
+const
+
+-------------------------------------------------
+Data types//
+1.String - " any text "
+2.Number - Number
+3.Boolean - Ture / False
+4.Null - null
+5.Undefined - undefined
+6. Symbol - symbol('something')
+7.Object - {key:  'value'}
+  -Array [1,"text",false]
+  -Function - function name(){          }
+
+String//
+Template literals(template Strings)
+let string=`  string text ${expression} ${variable} `  ;
+`Array//
+eg.
+let box = ["apple","orange",false,15]
+
+to show single data from array
+box[0]
+
+to overwrite value in array
+box[0]= "pineapple";
+
+Object//
+eg.
+let fruit={key:value};
+obj_name.keyname
+obj_name["keyname"]=newvlaue//to overwrite value
+
+**Array is also called obj**
+---------------------------------------------------------
+Operators
+*Mathematical Operations*
++,-,*,/
+** expotential
+++ increment
+-- decrement
+% modulous
+a++ is show a and increment after next line
+++a is increment and show value.
+
+(+) String Operator
+-----------------------------------------------
+Comparison Operator
+ ==   Equal 
+!= Not Equal
+
+===  equal value and equal data type
+
+***bonus tip 
+Tenary operator
+let x =5;
+x >5 ? true:false
+**
+-------------------------------------
+Function Statement | Declaration//
+*is a block of code designed to perform a particular Task
+function name(){statement 1;statement 2;}
+
+Parameter in function//
+function name(variable){ ; }
+
+Using return to get value.
+
+Function Expression//
+variable = function (){
+return value;
+}
+
+IIFE//immediately  invoked function expression
+(function(){
+return value;
+})()
+
+Block Scope//
+( let nk declare htr yin khw use lo ma ya
+var nk declare htr yin khw use lo ya
+)
+Eg.
+{
+ let a = 1;
+var b=2;
+}
+
+
+

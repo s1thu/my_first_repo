@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let record = []; // to store result
+        let index = 0;
+
+        function saveRecord(w,b,r){
+            record[index] = {
+                width :w,
+                breadth : b,
+                result :r
+            };
+            index++;
+        }
+
+        function calcArea(width,breadth){
+            let calc = width * breadth;
+            let result = calc+" sqft";
+            saveRecord(width,breadth,result);
+            return result;
+        }
+
+        //ငွေလဲနူန်း
+        let rates = {
+            usd:1636,
+            eur:1933,
+            sgd:1208
+        }
+
+        function exchnageToMmk(amount, currency){
+            let calc = amount * rates[currency];
+            let result = calc + " mmk";
+            return result;
+        }
+
+        function exchnageFromMmk(amount, currency){
+            let calc = amount / rates[currency];
+            let result = calc +" "+currency;
+            return result;
+        }
+
+        // အသီးစျေး
+        let furitPrice = {
+            orange : 100,
+            manog : 250,
+            apple : 70
+        }
+
+        function calcTax(amount, percentage=5){
+            return (amount*percentage)/100;
+        }
+
+        function calcCost(quentity, furit){
+            let calc =  quentity * furitPrice[furit];
+            let result = calc + " mmk";
+            return {
+                name : furit,
+                unitPrice : furitPrice[furit],
+                quentity : quentity,
+                cost : calc,
+                tax : calcTax(calc),
+                total : calc + calcTax(calc)
+            };
+        }
+
+
+    </script>
+</body>
+</html>
