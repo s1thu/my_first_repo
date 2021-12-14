@@ -39,6 +39,22 @@
       function add() {
         return run();
       }
+
+      //to get value from obj in parameter
+      let coffee_price = {
+        mocha: 1000,
+        expresso: 1500,
+        Latte: 2000,
+      };
+      function togetvalue(price) {
+        return coffee_price[price];
+      }
+
+      //to get value from array in parameter
+      let arr = ["Hello", 12, "World"];
+      function togetvaluefromarray(arrNo) {
+        return arr[arrNo];
+      }
     </script>
   </body>
 </html>

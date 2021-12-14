@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method</title>
+  </head>
+  <body>
+    <h1>Method</h1>
+    <script>
+      function myTest() {
+        console.log(this);
+        //THis this will return window object
+      }
+      let myself = {
+        //property
+        name: "Sithu Win",
+        age: 20,
+        skill: ["html", "CSS", "js"],
+
+        //method
+        test: function () {
+          return "this is test method";
+        },
+
+        //method in es6
+        //parameter can be used
+        run() {
+          return "this is run method";
+        },
+
+        //this
+        showAll() {
+          return `My name is ${this.name} and i'm ${this.age} years old`;
+          //This this. will return current obj
+        },
+      };
+    </script>
+  </body>
+</html>

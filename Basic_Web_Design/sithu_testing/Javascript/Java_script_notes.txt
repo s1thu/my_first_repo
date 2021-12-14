@@ -99,5 +99,17 @@ Eg.
 var b=2;
 }
 
+To get a value from obj in parameter we need to write a value with "string"
+eg.
+let fruit_price= {
+apple : 100,
+mango:200,
+grape:300
+}
+function togetvaluefromfruitPrice(price){
+return fruit_price[price];
+---------------------------------------------------
+Method//
+What is method - method is also function
 
 

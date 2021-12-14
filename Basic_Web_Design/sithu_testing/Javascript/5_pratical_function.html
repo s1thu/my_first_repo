@@ -43,6 +43,28 @@
       }
 
       //to buy fruit
+      let fruit_price = {
+        orange: 300,
+        apple: 250,
+        mango: 100,
+      };
+      let percentage = 5;
+      function calcTax(amount, percentage) {
+        return (percentage * amount) / 100;
+      }
+      function calCost(quantity, fruit) {
+        let calc = quantity * fruit_price[fruit];
+        let result = calc + "MMK";
+        let total = calc + calcTax(calc, percentage);
+
+        return {
+          name: fruit,
+          unit: quantity,
+          unitPrice: fruit_price[fruit],
+          cost: calc,
+          Total_Price: total,
+        };
+      }
     </script>
   </body>
 </html>
