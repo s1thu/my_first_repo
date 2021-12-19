@@ -122,6 +122,7 @@ What is method - method is also function
 
 this -> represent the current obj.
 
+functions in object is called methods.
 ------------------------------------------------------
 Conditional Statement//
 1//
@@ -178,12 +179,22 @@ possible error// statement 2 in for loop
 ----------------------------------------------------------
 Summary Programming Basic (JS)
  **need to learn -while loop , do while 
+There are property and methods in object.
+-----------------------------------------------------------------------
+Classes//
+-classes are a template for creating objects.
 
--variable
-	var,let,const
--datatype
-	string,number,object->array,obj
--
+classes also same as object.
+Classes cannot be used to display.But there are someways to show output.
+	1.Changing the class to object,this method is called instance.Use new keyword to build the class to object.
+	2.using static keyword variable to declare  properties.
+
+constructor()//
+constructor in the class will work if you build instance for your class.
+you can also use parameter in the instance.That will pass into the constructor's parameter if that was used.
+
+
+
 
 
 

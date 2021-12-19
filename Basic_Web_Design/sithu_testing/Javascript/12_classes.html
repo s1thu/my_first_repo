@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes</title>
+  </head>
+  <body>
+    <h1>Classes</h1>
+    <script>
+      // let myinfo = {
+      //   name: "sithu",
+      //   age: 20,
+
+      //   //method
+      //   learn() {
+      //     return "this is learning";
+      //   },
+      //   showbdyear() {
+      //     return `${this.name} was borned in ${2021 - this.age}`;
+
+      //   },
+      // };
+
+      //creating class
+      class myself {
+        //property in class
+
+        age = 20;
+        skill = "try to become web developer";
+
+        // method in class
+        mybirthdate() {
+          return `My Birthday year is ${2021 - this.age}`;
+        }
+        introduce() {
+          return `My name is ${this.name}`;
+        }
+
+        //constructor
+        //auto build property in myself cus of this.name
+        constructor(name) {
+          this.name = name;
+          console.log("My Name is " + name);
+        }
+      }
+      let me = new myself("sithuwin");
+    </script>
+  </body>
+</html>

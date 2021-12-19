@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constructor</title>
+  </head>
+  <body>
+    <script>
+      //building property from instance parameter
+      class Student {
+        constructor(name, age, grade) {
+          this.name = name;
+          this.age = age;
+          this.grade = grade;
+        }
+      }
+      let s1 = new Student("Sithu", 20, "A");
+      let s2 = new Student("Win", 19, "B");
+      let s3 = new Student("Mya", 22, "C");
+      let s4 = new Student("Maung", 21, "A");
+      let s5 = new Student();
+    </script>
+  </body>
+</html>
