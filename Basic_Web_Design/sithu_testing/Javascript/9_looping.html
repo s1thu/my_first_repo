@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using</title>
+  </head>
+  <body>
+    <h1>Loop</h1>
+    <script>
+      //using break; to stop
+      for (let i = 1; i <= 5; i++) {
+        console.log("i'm loop" + i);
+        if (i == 4) {
+          break;
+        }
+      }
+
+      //using continue; to skip
+      for (let a = 1; a <= 5; a++) {
+        if (a == 4) {
+          continue;
+        }
+        console.log("i'm loop" + a);
+      }
+    </script>
+  </body>
+</html>

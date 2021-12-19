@@ -98,7 +98,7 @@ Eg.
  let a = 1;
 var b=2;
 }
-
+console.log(a); // this statement won't work cus a is in the block scope  
 To get a value from obj in parameter we need to write a value with "string"
 eg.
 let fruit_price= {
@@ -108,6 +108,14 @@ grape:300
 }
 function togetvaluefromfruitPrice(price){
 return fruit_price[price];
+
+function in obj//
+let obj= {
+name :"sithu",
+run(){ return "this is run";}
+};
+
+**function's function will stop when the function is return a value**
 ---------------------------------------------------
 Method//
 What is method - method is also function
@@ -139,9 +147,43 @@ statement 2;
 
 **else don't need condition**
 ----------------------------------------------------
+Using Logic Operator(more than one condition)//
 
+&& -- AND operator
+||     -- OR op-perator
 
+-------------------------------------------
+Looping
+for(statement 1;statement 2;statement 3)
+{ code block }
 
+statement 1 // is executed {one time}  before the execution of the code block.
+statement 2// defines the condition for execution the code block.
+statement 3// is executed {every time} after the code block has been executed.
+
+using //break;// to stop loop
+using //continue;//to skip
+
+Array & object looping//
+
+for array - using array length to get value
+for(x of array_name){ console.log(x)}; // another method to get value from array
+** can be used only array**
+
+for(x in arr_name or obj_name){console.log(x)}; // another method to get value from array or object
+**arr_name will return index number in this method**
+**obj_name will return key value in this method**
+
+possible error// statement 2 in for loop 
+----------------------------------------------------------
+Summary Programming Basic (JS)
+ **need to learn -while loop , do while 
+
+-variable
+	var,let,const
+-datatype
+	string,number,object->array,obj
+-
 
 
 
