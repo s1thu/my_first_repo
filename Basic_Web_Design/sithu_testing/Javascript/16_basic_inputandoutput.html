@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading">Min Ga Lar Par</h1>
+    <input type="text" id="t1" /><button onclick="changingheader()">
+      Click Me
+    </button>
+    <script>
+      //   let input = prompt("Say SOmething");
+      //   document.getElementById("head").innerText = input;
+      let i = document.getElementById("t1");
+      let h = document.getElementById("heading");
+      function changingheader() {
+        let text = i.value;
+        h.innerText = text;
+      }
+    </script>
+  </body>
+</html>

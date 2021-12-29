@@ -193,8 +193,50 @@ constructor()//
 constructor in the class will work if you build instance for your class.
 you can also use parameter in the instance.That will pass into the constructor's parameter if that was used.
 
+-----------------------------------------------------------------------------------------------
+Standard Built-in objects & Functions//
 
+Date()
+Number()
+Math()
 
+Date()//
+getMonth(),getday(),etc...->start from 0//be careful
 
+setmethod()//
+date.setDate(5);// input
+------------------------------------------------------------------------------------------------------
+Everything is Object//
+
+String()
+Number()->tofixed() will dathama num 1 toe
+
+-----------------------
+frontendmentor
+cssbattle
+codewar
+
+-----------------------------------
+Basic Input and Output//
+
+DOM obj//
+select an element
+ 	1. document.getElementById()
+	2.document.getElementsByTagName() // this is html tag
+	3.document.getElementsByClassName()
+
+get text
+	1.selected.innerText
+	2.selected.innerHTML
+	3.selected.value
+set text
+	1.selected.innerText = " new text"
+event
+	1.onclick = fun()
+	2.ondbclick= fun()
+
+document.getElementsByTagName()
+document.getElementsByClassName()
+// work like a array
 
 
