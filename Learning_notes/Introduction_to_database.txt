@@ -1,0 +1,110 @@
+Introduction to SQL
+
+Relational database-collection of tables
+Row-Record
+Column-Field
+
+Multiple rows and columns
+Eg.select  field_name1,field_name2 from table_name;
+
+Limit rows and columns
+Eg.select * from table_name limit num;
+
+Use DISTINCT key words to not to duplicate.(unique)
+Eg.select distinct Field_name from table_name;
+
+Use COUNT(*) to Check the Total numbers of rows
+Eg.select count(*) from table_name;
+
+COUNT(*) also can be used like this 
+eg.count(field_name)all of the number of non-missing values in a particular columns.
+eg.count(distinct field_name)unique 
+
+Comparison Operators 
+= equal
+<> not equal != 
+< less than
+> greater than
+<= less than equal
+>= greater than equal
+
+Filtering the quaries using WHERE
+Eg.select * from table_name where condition;
+
+WHERE condition AND condition
+-select * from table_name 
+where condition
+and condition;
+**You can add as many AND conditions as you need!**
+**where(condition AND condition)**
+
+WHERE condition OR condition
+-select  * from table_name 
+where condition
+or condition;
+**You can add as many OR conditions as you need!**
+**where(condition OR condition)**
+
+Combination of AND and OR condition
+-select * from table_name
+where (condition OR conditon) // individual clauses in parentheses
+and (condition OR condition);
+
+BETWEEN
+-select * from table_name
+where field_name
+BETWEEN condition;
+
+Using WHERE IN condition to midify the WHERE OR condition
+-select * from table_name
+where field_name in (text values,numeric values)
+
+NULL and IS NULL
+-null represents a missing or unknown value.
+-is null is useful to combined with WHERE
+-IS NOT NULL to filter out missing values which are not null
+
+LIKE and NOT LIKE
+-to search for a pattern in a column
+select field_name
+from table_name
+where field_name LIKE 'B%' or '_B'
+2 wildcards to use with LIKE: % and _
+% is zero,one or many characters in text. For Eg.to search a many like 'Data','DataC','DataCamp', so on
+Use Where name LIKE 'Data%';
+_ is a single character. For Eg. to search a many quareis like 'DataCamp','DataComp',so on
+Use Where name LIKE ' DataC_mp';
+
+
+Aggregate Function
+-to perform some calculation on the data in a database.
+AVG( )
+MAX( )
+SUM( )
+MIN( )
+
+
+Combination aggregate functions with WHERE
+select sum(field_name)
+from table_name
+where condition;
+
+A note on arithmetic
++,-,*,/
+
+It's AS simple AS aliasing
+-means you assign a temporary name to something.
+select max(budget) as max_budget,
+max(duration) as max_duration
+from films;
+
+ORDER BY
+Ascending Order
+-select field_name
+from table_name
+order by field_name;
+
+Descending Order
+-select field_name
+from table_name
+order by field_name desc;
