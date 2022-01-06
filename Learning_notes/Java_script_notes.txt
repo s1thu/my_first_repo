@@ -239,4 +239,87 @@ document.getElementsByTagName()
 document.getElementsByClassName()
 // work like a array
 
+**the input value from input type 
+-------------------------------------------------
+Calculation in Javascript//
+
+input type="number" fik tok mh // idnumber.valueAsNumber ka alok lok mhr pr
+
+------------------------------------------------------
+DOM manipulation//
+	-dom is document object model
+	-html element will become object of js
+	-manipulation mean to change html whatever we want using dom obj
+	-to control web UI
+
+document.querySelector()//top ka 1ku pl phan lo ya just one only one
+eg.document.querySelector(".abc")// class so . ,id so #
+document.querySelectorAll()//d htl mhr css twy selector htae p use 
+
+--------------------------------------------------------------------------
+GET DATA
+
+Content//
+document.querySelector("h1").innerText
+
+html//
+document.querySelector("ul").innerHTML
+
+style//
+document.querySelector("h1").style
+
+value,valueAsNumber,valueAsDate//these are from input  
+document.querySelector("[name  = 'name']").value
+document.querySelector("[name = 'weight']").valueAsNumber// input type number mhr pl aloke loke
+
+attribute//html tag htl ka attribute twy ko hlan phan
+document.querySelector("a").href//property pone sn nk phan tr
+
+document.querySelector("img").getAttribute("src")// specific fik tl vs mhr ko yay htr tk file path atine pya
+
+tips **server side ko upload lok ml so yin name mhr array so tk thabw myo name="photo[]" ae lo lay htae pay ya array lo thi aung**
+
+input files mhr multiple file htae chin yin <input type="file" multiple>
+
+select mhr value choose htr tk value ma ya value ko attribute nk return pyn.
+<select name= "country">
+<option value="mm">Myanmar</option>
+</select>
+document.querySelector("[name='country']").value //so yin mm ya ml Myanmar ma ya
+
+document.images[0].getAttribute("src")
+document.images[0].setAttribute("src","<file path>")// set so value 2 ku
+-------------------------------------------------------------------------------------------------
+Event Handling//
+	-html attribute// like using onclick in html attribute to execute to write js codes 
+	-property
+	eg.  	<button id="#btn">Test</button>
+		function run(){console.log("this is run");
+		document.querySelectol("#btn").onclick = function(){
+		run() };
+		//button yk element htl mhr shi tk onclick so tk property ko use
+	-method // method mhr parameter 3 ku pr ml aku tok 2ku pl pr ml
+	eg.	document.querySelector("#btn").addEventListener("click",function(){ run(); });
+
+Basic Events
+	-mouse
+		.onclick	
+		.ondblclick	
+		.mouseover//mouse youk lr yin
+		eg. onmouseover 
+		.mouseout//mouse htwt twr tk achain mhr alok lok
+		eg. onmouseout
+	-keyboard
+		.keyup //key ko phi htr p hlout lyk yin alok lok
+			document.addEventListener("keyup",function(){console.log ("hello keyup")});
+		.keypress//phi lyk tr nk alok lok
+		.keydown//same as keypress
+-----------------------------------------------------------------------------------------------
+More About Events//
+	
+	-event.parameter
+	eg.//document.addEventListener("keyup",function(event){
+		console.log(event); 
+
+
 

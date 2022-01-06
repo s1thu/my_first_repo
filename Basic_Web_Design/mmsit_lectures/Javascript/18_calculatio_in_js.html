@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculation in JS</title>
+  </head>
+  <body>
+    <h1>Calculation in JS</h1>
+
+    <table>
+      <tr>
+        <td><label>First Number:</label></td>
+        <td><input type="number" id="number-type" min="0" /></td>
+      </tr>
+      <tr>
+        <td><label>Second Number:</label></td>
+        <td><input type="text" id="text-type" /></td>
+      </tr>
+      <tr>
+        <td>
+          <label>Answer:</label>
+        </td>
+        <td><span id="ans"></span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button onclick="calculate()">Calculate</button></td>
+      </tr>
+    </table>
+
+    <script>
+      let num1 = document.getElementById("number-type");
+      let num2 = document.getElementById("text-type");
+
+      function calculate() {
+        if (num1.value == 0 && num2.value == 0) {
+          alert("Please put a number");
+        } else {
+          document.getElementById("ans").innerText =
+            num1.valueAsNumber + parseInt(num2.value);
+        }
+      }
+    </script>
+  </body>
+</html>
