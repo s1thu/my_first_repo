@@ -317,9 +317,41 @@ Basic Events
 -----------------------------------------------------------------------------------------------
 More About Events//
 	
-	-event.parameter
+	1-event parameter 
+	      // keyup event
 	eg.//document.addEventListener("keyup",function(event){
 		console.log(event); 
+	
+	event parameter ko html attribute mhr pass chin yin apyae asone yite
+	eg.//    <button onclick="run(event)">Click ME to Test</button>
 
+	2-e.preventDefault() //default function twy alok  ma lok tok wo stop twr tl ..like in <a> tag
+			  //a tag mhr href link chate pay htr lo click lyk yin page kuu twr tr ka default function
+
+
+
+	3- this keyword in event
+	     //this keyword refers to the object of his object.
+
+	4. focus and blur event for input
+	    //input ko cursor htouk tr ka focus
+	    //cursor ko input htl ka htwt p document htl ka bal nay yr fikfik htouk lyk tr ka blur
+
+	5. change event for input & select
+	   //form input mhr enter type yin change event pw lr
+
+	6. submit event for form
+	//form mhr id pay p alok lok
+
+	7. onload and scroll event for window
+	//onload ka nout sone mh alok lok
+	eg. window.onload = funtion (){
+		console.log("I'm window onload");
+		}
+
+	//scroll
+	window.addEventListener("scroll",function(){
+	
+	});
 
 

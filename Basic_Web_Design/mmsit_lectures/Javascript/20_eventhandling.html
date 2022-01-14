@@ -7,18 +7,77 @@
     <title>Event Handling</title>
   </head>
   <body>
+    <ul>
+      <li>Sithuwin</li>
+      <li>Jack</li>
+      <li>Hello</li>
+    </ul>
+    <button onclick="run(event)">Click ME to Test</button>
+    <a href="www.google.com" target="_blank" id="link">Google</a>
+    <p id="text-input">Hello</p>
+    <input type="text" id="text" />
+    <select id="select-1">
+      <option value="Hello">HI</option>
+      <option value="Hello1">Hi1</option>
+      <option value="Hello2">Hi2</option>
+      <option value="Hello3">Hi3</option>
+    </select>
     <script>
       //parameter in event
-      document.addEventListener("keyup", function (event) {
-        if (event.key == "Enter") {
-          console.log("Hello" + event.key);
-        }
-        console.log(event.key);
+      // document.addEventListener("keyup", function (event) {
+      //   if (event.key == "Enter") {
+      //     run();
+      //   } else {
+      //     console.log(event.key);
+      //   }
+      // });
+
+      // document.addEventListener("keypress", function () {
+      //   console.log("I'm key press");
+      // });
+      // event parameter passing from html attribute
+      function run(e) {
+        console.log(e);
+        console.log("I'm running");
+      }
+
+      //for clicking ul
+      document.querySelector("ul").addEventListener("click", function (event) {
+        console.log(event);
       });
 
-      document.addEventListener("keypress", function () {
-        console.log("I'm key press");
+      //event for link
+      document.querySelector("a").addEventListener("click", function (e) {
+        e.preventDefault(); //to stop default function
+        console.log(e);
       });
+
+      //this keyword in event
+      let i = document.getElementById("text-input");
+      i.addEventListener("click", function () {
+        console.log(this.innerText);
+      });
+
+      //input events
+      //1.focus event
+      document.querySelector("#text").addEventListener("focus", function () {
+        console.log("I'm focus");
+      });
+      //2.blur event
+      document.querySelector("#text").addEventListener("blur", function () {
+        console.log("I'm blur");
+      });
+
+      document.querySelector("#text").addEventListener("keyup", function () {
+        console.log(this.value);
+      });
+
+      //change event
+      document
+        .querySelector("#select-1")
+        .addEventListener("change", function () {
+          console.log(this.value);
+        });
     </script>
   </body>
 </html>

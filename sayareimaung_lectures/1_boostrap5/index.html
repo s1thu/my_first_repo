@@ -25,15 +25,30 @@
       input[type="text"] {
         width: 50%;
       }  */
+      .wrap {
+        border: 5px solid red;
+        width: 300px;
+        height: 150px;
+        position: relative;
+      }
+      .boxone,
+      .boxtwo {
+        width: 90%;
+        height: 55px;
+        margin: 10px;
+      }
+      .boxone {
+        background: red;
+      }
+      .boxtwo {
+        background: yellow;
+      }
     </style>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <div class="wrap">
+      <div class="boxone">Box one</div>
+      <div class="boxtwo">boxtwo</div>
+    </div>
   </body>
 </html>
