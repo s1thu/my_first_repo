@@ -353,5 +353,10 @@ More About Events//
 	window.addEventListener("scroll",function(){
 	
 	});
+----------------------------------------------------------------------------------------------------------------------------------
+HTML DOM Elements (NODES)// to create html with js
+
+document.createElement("p"); <- HTML element
+document.createTextNode("Hello"); <- create text
 
 

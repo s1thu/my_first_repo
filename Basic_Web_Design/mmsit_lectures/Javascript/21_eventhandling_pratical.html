@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling Pratical</title>
+  </head>
+  <style>
+    .box {
+      margin-top: 10px;
+      text-align: center;
+    }
+    fieldset {
+      display: inline-block;
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <h1>Event Pratical</h1>
+      <form id="control-form">
+        <fieldset>
+          <legend>Text Control</legend>
+          <!-- For Text -->
+          <label for="text">Text</label>
+          <input type="Text" id="text" required />
+
+          <!-- For Color -->
+          <label for="color">Color</label>
+          <input type="Color" id="color" />
+
+          <!-- For fontsize -->
+          <label for="range">Font Size</label>
+          <input type="range" id="range" min="10" max="100" value="10" />
+
+          <!-- For FontStyle -->
+          <label for="fontstyle">FontStyle</label>
+          <select name="" id="fontstyle">
+            <option value="Times">Times</option>
+            <option value="Arial">Arial</option>
+          </select>
+          <button type="submit">Run</button>
+        </fieldset>
+      </form>
+      <p id="output">Min Ga La Par</p>
+    </div>
+  </body>
+  <script>
+    let output = document.getElementById("output");
+
+    // //for input text
+    // document.getElementById("text").addEventListener("keyup", function () {
+    //   output.innerText = this.value;
+    // });
+
+    // //for changing color
+    // document
+    //   .querySelector("[type='color']")
+    //   .addEventListener("change", function () {
+    //     output.style.color = this.value;
+    //   });
+
+    // //for chaning fontsize
+    // document.getElementById("range").addEventListener("change", function () {
+    //   output.style.fontSize = this.value + "px";
+    // });
+
+    // //for changing fontstyle
+    // document
+    //   .getElementById("fontstyle")
+    //   .addEventListener("change", function () {
+    //     output.style.fontFamily = this.value;
+    //   });
+
+    document
+      .getElementById("control-form")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+        output.innerText = document.getElementById("text").value;
+        output.style.color = document.querySelector("[type='color']").value;
+        output.style.fontSize = document.getElementById("range").value + "px";
+        output.style.fontFamily = document.getElementById("fontstyle").value;
+        this.reset();
+      });
+  </script>
+</html>

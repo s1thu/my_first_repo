@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML DOM Elements</title>
+  </head>
+  <body>
+    <script>
+      let body = document.body;
+      let paragraph = document.createElement("p"); // to create <p>
+      let text = document.createTextNode("Hello"); // to put text in <p>
+      paragraph.append(text); //<p>Hello</p>
+      body.append(paragraph); // <body><p> Hello </p></body>
+    </script>
+  </body>
+</html>
