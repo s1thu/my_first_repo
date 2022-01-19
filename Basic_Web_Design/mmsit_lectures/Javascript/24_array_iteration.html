@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Iteration</title>
+  </head>
+  <body>
+    <h1>Hello0</h1>
+    <h1>Hello1</h1>
+    <h1>Hell02</h1>
+    <h1>Hello3</h1>
+
+    <script>
+      //array
+      let array = ["Mg", "Si", "Thu", "Win"];
+
+      //creating html with javascript
+      let ul = document.createElement("ul");
+
+      array.forEach(function (i, index, arr) {
+        console.log(i, index, arr);
+        let li = document.createElement("li");
+        let text = document.createTextNode(i);
+        ul.append(li);
+        li.append(text);
+      });
+      document.body.append(ul);
+
+      //another example of foreach
+      let allh1 = document.querySelectorAll("h1");
+      //remember Nodelist is not a real array
+      let forh1 = [];
+      allh1.forEach(function (i) {
+        forh1.push(i.innerText);
+        console.log(i.innerText);
+      });
+    </script>
+  </body>
+</html>

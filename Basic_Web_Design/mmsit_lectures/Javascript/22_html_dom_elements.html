@@ -7,12 +7,33 @@
     <title>HTML DOM Elements</title>
   </head>
   <body>
+    <ul>
+      <li>Apple</li>
+    </ul>
     <script>
       let body = document.body;
       let paragraph = document.createElement("p"); // to create <p>
       let text = document.createTextNode("Hello"); // to put text in <p>
       paragraph.append(text); //<p>Hello</p>
       body.append(paragraph); // <body><p> Hello </p></body>
+
+      //to create img with js
+      let img = document.createElement("img");
+      img.setAttribute("src", "img/myatsu.jpeg");
+      body.append(img);
+      img.style.width = "200px";
+
+      //adding more lis using append
+      let li = document.createElement("li");
+      let text1 = document.createTextNode("Mango");
+      li.append(text1);
+      document.querySelector("ul").append(li);
+
+      //adding more lis using prepend
+      let li1 = document.createElement("li");
+      let text2 = document.createTextNode("Chicken");
+      li1.append(text2);
+      document.querySelector("ul").prepend(li1);
     </script>
   </body>
 </html>

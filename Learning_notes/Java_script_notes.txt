@@ -355,8 +355,60 @@ More About Events//
 	});
 ----------------------------------------------------------------------------------------------------------------------------------
 HTML DOM Elements (NODES)// to create html with js
+html bat ka element twy ko js ka nodes lo pl that mht htr pr tl
 
 document.createElement("p"); <- HTML element
 document.createTextNode("Hello"); <- create text
+to put text in html element -> newP.append(newText)
+document.body.append(newP);   
+
+.append  // ka out ka ny htae
+.prepend // ka apw ka nay htae
+
+---------------------------------------------------------------------------------------
+Useful prototype methods//
+methods ka obj mhr pl pr
+
+String method//
+w3school ref
+let name = "sithu win"; // primitive data type
+let str = new String("SithuWIn"); // using string object
+text htl mh tunyi tk text twy akone pyin chin yin regular expression ko use
+text1.replace(/dolor/g,"abc") //  global flag g ( /g)
+text1.replace(/DOLOR/i,"abc") //   /i  ka case insensitive  DOLOR lo shr lyk yin shr ma twe wo ae tok /i ko use yin ay sy ya
+trim() // ma lo att tk space twy akone phyt
+split() //datatype changing string->array
 
 
+Number Method //
+ -   mybtc.toFixed(3) // dathama 3 nay yr phyt anout ka hr ko kyi 5 kyw yin 1 toe
+ -   mybtc.toPrecision(3) // same as toFixed
+ -   parseInt() parsefloat()
+ -  Math.floor() //short u
+     Math.ceil() // toe u
+
+Array Method//
+ array.length
+ array.toString()
+ array.join(" "); // array room 1ku gyr ka hr ko bal hr htae chin ll htae lo ya eg. -  ,  ;
+  array ko ashae ka htae yin unshift htote yin shift
+  array ko anout ka htae yin push htote yin pop
+  sort() // alphabetically array ce
+  reverse() // reverse of sort
+
+Methods for object//
+ Object.keys(obj_name)
+ Objects.value(obj_name)
+---------------------------------------------------------------------------------
+Array Iteration// array iteration mean i in loop
+
+array.forEach(callback fun)// function fik tk atwt executable lok nai
+array_name.forEach(function(i){
+	
+});
+three parameter in that callback fun(i,index,arr)//
+first parameter means items in array
+second parameter means index_number in arrray
+third parameter means array that u built 
+
+NodeList is not a real array.
