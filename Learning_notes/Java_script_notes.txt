@@ -412,3 +412,86 @@ second parameter means index_number in arrray
 third parameter means array that u built 
 
 NodeList is not a real array.
+-----------------------------------------------------------------------------------------------
+Popular Array Method//
+isArray() // Array.isArray(array_name);  true return
+includes() // fruits.includes("Apple"); // case sensitive fik array htl mhr shi tk text nk akone tu mh true return pyan
+indexOf() //fruits.indexOf("Apple"); 
+splice() // fruits.splice(2,3,) // (start, end)
+concat() // array myar paung chin
+
+map() //loop
+same as foreach 
+fruits.map(function(element){
+	
+})
+map ka use mk array yk size atine array athit htote pay with undefined value.//eg Array[undefined,undefined]
+return value// htote pay mh array htl mhr value pr twr mhr fik tl.
+this is the main concept of map function
+
+filter()//loop
+filter so tk atine sit htote pay tr
+thu ll new array htote pay tl without value tok ma hok wo Array room lay ko declare loke thalo htote pay//eg. Array[]
+p tok condition nk kite tr pl array pyan pay tl
+
+find()
+find also loop
+find so tk atine shr ml 1ku twe yin stop twr ml
+
+reduce()//also loop too
+//reduce nk tachr hr twy nk ma tu nk acht ka reduce yk callback function twy ka apw ka hr twy nk ma tu tok tr
+arrayname.reduce(function(previous vlaue, current value) , initial value )
+//previous value always changes
+
+some()
+true false return pyan
+tacho tawat ka myr lr nae lr
+
+every()
+akone lone myrr lr nae lr
+
+-----------------------------------------------------------------------------------------------------------
+Arrow function//
+function ==      ()=>
+
+-arrow function come from function expressoin;
+function expression//
+let one = function(){
+	return "this is one";
+}
+
+arrow function//
+let one = () =>{
+	retrun "this is one";
+}
+
+arrow function mhr return 1 kyaung pl shi yin//
+let one = ()=> "this is one";
+
+multiple executabale code line pr yin//
+let one =() =>{
+	let x = "this is two";
+	return x;
+}
+
+with one parameter in it//
+let one = x => "this is x";
+
+with multiple parameters in it//
+let one = (x,y) => x+y;
+
+IIFE with arrow function//
+(()=>{
+code execute;
+})();
+
+callback function with arrow fun//
+window.addEventListener("load",()=>console.log('this is six'));
+
+obj htl mhr shi tk method with arrow//
+eg.
+swhoName : ()=> console.log("blahblah");
+
+**method htl mhr use tk this ka thu ayin obj ko representative
+   arrow function nk yay lyk tk this ka window ko representative**
+

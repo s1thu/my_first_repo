@@ -1,0 +1,18 @@
+CSS
+
+selector
+  |
+div{ 
+	color : black; ----------------> rules 
+}                   |            |
+	property  value
+
+**box-sizing:border-box;
+border-box fik tk atwt  margin ko htae ma pg pay pr wo**
+
+**position fixed and absolute are the same things but they are different in scroll when you put so much height in website**
+
+CSS margin//
+
+margin 2value: vertical_value Horizontal_value;
+margin 2vlaue:top horizontal_vlaue bottom;
