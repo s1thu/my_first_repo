@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popular Array Method Using Filter</title>
+  </head>
+  <body>
+    <script src="./js/shop.js"></script>
+    <script>
+      fruits = ["Apple", "Orange", "PineApple", "Grape", "Mango"];
+
+      let newarr = fruits.filter(function (e) {
+        console.log(e, e.length);
+        return e.length >= 6;
+      });
+      console.log(newarr);
+
+      //for shop
+      let newshop = shop.filter(function (e) {
+        console.log(e.price);
+        return e.price >= 100;
+      });
+      console.log(newshop);
+    </script>
+  </body>
+</html>

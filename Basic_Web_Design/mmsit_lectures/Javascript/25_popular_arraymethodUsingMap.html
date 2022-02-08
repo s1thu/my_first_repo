@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popular Array Method Using MAP</title>
+  </head>
+  <body>
+    <script src="./js/shop.js"></script>
+    <script>
+      let fruits = ["Apple", "Mango", "PineApple", "Grape"];
+      let newarr = fruits.map(function (e, i) {
+        console.log(i + 1, e);
+        return "sithu" + " likes " + e; //adi ka ka d hr pl remember***
+      });
+      console.log(newarr);
+
+      //for marks array
+      let marks = [20, 40, 70, 80, 90, 10];
+      let markarray = marks.map(function (e) {
+        return e >= 40 ? "Passed" : "Failed";
+      });
+      console.log(markarray);
+
+      //for shop array
+      let newshoparray = shop.map(function (e) {
+        return e.title + " - " + e.price;
+      });
+      console.log(newshoparray);
+    </script>
+  </body>
+</html>

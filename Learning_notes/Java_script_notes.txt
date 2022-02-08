@@ -494,4 +494,86 @@ swhoName : ()=> console.log("blahblah");
 
 **method htl mhr use tk this ka thu ayin obj ko representative
    arrow function nk yay lyk tk this ka window ko representative**
+---------------------------------------------------------------------------------
+Browser Object model//
+
+Properties in BOM//
+innerWidth & innerHeight//outerWidth & outerHeight
+window.innerWidth
+window.outerWidth
+
+pageYoffset// like  Y-axis
+
+events//scroll,resize,load
+window load ka browser g taku lone loading swl p tk nout sone mh alok lok tr
+
+
+Method in BOM//
+alert()
+confrim()
+prompt()
+open()
+close()
+
+timing-timeOut method()//
+setTimeout(run,3000) // second paramete is milisecond
+to clear this timeout use clearTimeout()
+only console.log is working return doesn't work
+setInterval(run,3000) // 3 second 1khr tine alok lok
+to clear is interval use clearInterval()
+
+Object in BOM//
+screen 
+location//
+location.reload//browser ko reload swl
+location.href//
+history//
+------------------------------------------------------------------------------------------------------------
+Conclusion//
+
+-Spread syntax (...)
+-localStorage
+-Geoloaction
+-JSON
+-fetch()
+
+Spread Syntax(ES6 versin mhr pr lr tk trend fik tk hr)// this is like an array 
+result = [...arr1,"abc",...arr2,...arr1];
+function htl mhr htae chin tk parameter ko ll array ka nay hlan khw p use lo ya
+Eg.	function run(x,y,z){
+	return x+y+z;
+	}
+	console mhr //run(...arr1)
+
+-Local Storage//
+data taku ko browser mhr ma pyout aung thein chin tr
+localStorage.setItem("name","sithu")//item htae tr
+
+-Geolocation//(thu ko navigator ka nay ya mhr)
+navigator.geolocation.getCurrentPosition()
+
+-JSON//string data type JSON(Js object notation)
+`  {"name":"sithuwin,"age":"18"} `    // this is json string
+JSON.parse()
+json ka nay js yk object ko change pay
+
+JSON.stringify()
+js object ka nay json pyn change pay
+
+json is giving data data ko pyn phan chin ml so yin fetch nk pyan phan
+fetch()
+
+Fetch() and json string work through server//please run with live server
+internet traffic time lay tok wait ya ml**
+
+-NODE JS & NPM(node package manager) intro
+RENDERING and JS ENGINE
+node js is a javascript runtime built on chrome'v8(JS ENGINE in chrome)
+down LTS version
+
+javascript code twy ko out of browser mhr run nai pr p.
+node htl mhr js code twy run lo ya.
+npm js ka frontend libraries twy ko install lok lo ya.
+frontend mhr name g tr so yin animatestyle
+
 

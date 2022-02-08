@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function</title>
+  </head>
+  <body>
+    <script>
+      function one() {
+        return "this is one";
+      }
+
+      function two() {
+        let x = "this is two";
+        return x;
+      }
+      function three(x) {
+        return "this is " + x;
+      }
+      function four(x, y) {
+        let z = x + y;
+        return z;
+      }
+
+      (function () {
+        console.log("This is five");
+        return "this is five";
+      })();
+
+      window.addEventListener("load", function () {
+        console.log("this is six");
+      });
+
+      let seven = {
+        name: "seven",
+        showName: function () {
+          return `this is ${this.name}`;
+        },
+      };
+
+      const fruits = [
+        "Banana",
+        "Apple",
+        "line",
+        "Mango",
+        "Orange",
+        "Lemon",
+        "kiwi",
+      ];
+
+      // စာလုံး 5 လုံးပါတဲ့အသီးတွေကို ရွေးထုတ်ပါ
+      // စာလုံး အကြီးပြောင်းပါ
+      // - နဲ့စပ်ပါ
+      // စာလုံးအသေးပြန်ပြောင်းပါ
+
+      //   let newarr = fruits
+      //     .filter(function (e) {
+      //       return e.length == 5;
+      //     })
+      //     .map(function (e) {
+      //       return e.toUpperCase();
+      //     })
+      //     .join("-")
+      //     .toLowerCase();
+
+      let newarr = fruits
+        .filter((e) => e.length == 5)
+        .map((e) => e.toUpperCase())
+        .join("-")
+        .toLowerCase();
+      console.log(newarr);
+    </script>
+  </body>
+</html>

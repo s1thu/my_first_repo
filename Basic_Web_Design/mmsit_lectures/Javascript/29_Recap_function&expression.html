@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recap Function & Expression</title>
+  </head>
+  <body>
+    <script>
+      //immediately invoked function expression
+      (function () {
+        console.log("hello i'm IIFE");
+      })();
+
+      //hoisting
+      fun();
+
+      //function statement
+      function fun() {
+        console.log("Hello Hoisting");
+        return "Hello this is function statement";
+      }
+
+      //function expression
+      let fun1 = function () {
+        console.log("Hello hoisting");
+        return "Hello this is function expression";
+      };
+
+      //if statement
+      let boolean = false;
+      if (boolean == true) {
+        console.log("this is true");
+      } else {
+        console.log("this is false");
+      }
+
+      //tenary operator
+      true ? console.log("this is true") : console.log("this is false");
+
+      //expressions in template literals
+      let x = `This is ${(function () {
+        let a = 5;
+        let b = 6;
+        return a + b;
+      })()}`;
+      console.log(x);
+    </script>
+  </body>
+</html>
