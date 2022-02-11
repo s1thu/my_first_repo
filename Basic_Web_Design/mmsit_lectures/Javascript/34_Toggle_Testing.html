@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outputing Largest Number</title>
+  </head>
+  <body>
+    <div class="bulb">
+      <img src="img/pic_bulboff.gif" id="methee" alt="bulb" />
+      <button id="on">Light on</button>
+      <button id="off" onclick="lightoff()">Light off</button>
+      <button id="toggle">Toggle Button</button>
+    </div>
+    <br />
+    <div
+      class="detectArea"
+      style="width: 200px; height: 200px; border: 2px solid black"
+    ></div>
+    <script>
+      let img = document.getElementById("methee");
+      let on = document.getElementById("on");
+      let off = document.getElementById("off");
+      let toggle = document.getElementById("toggle");
+      // function lighton() {
+      //   img.setAttribute("src", "img/pic_bulbon.gif");
+      // }
+
+      //for lighton
+      on.addEventListener("click", () => {
+        img.setAttribute("src", "img/pic_bulbon.gif");
+      });
+      //for lightoff
+      function lightoff() {
+        img.setAttribute("src", "img/pic_bulboff.gif");
+      }
+
+      //for toggle
+      toggle.addEventListener("click", () => {
+        if (img.getAttribute("src") == "img/pic_bulbon.gif") {
+          img.setAttribute("src", "img/pic_bulboff.gif");
+        } else {
+          img.setAttribute("src", "img/pic_bulbon.gif");
+        }
+      });
+
+      //detected area bulb
+      document
+        .querySelector(".detectArea")
+        .addEventListener("mouseenter", () => {
+          img.setAttribute("src", "img/pic_bulbon.gif");
+          setTimeout(lightoff, 1000);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whose Job</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background: black;
+        color: white;
+        text-align: center;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 50px;
+        padding: 10px;
+      }
+      button {
+        margin: 10px;
+      }
+      .opposite {
+        background: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p class="box1">Yes</p>
+    </div>
+    <button id="changeBtn">Make Opposite</button>
+    <br />
+
+    <script>
+      let box = document.querySelector(".box");
+
+      let text = box.children[0];
+      document
+        .getElementById("changeBtn")
+        .addEventListener("click", function () {
+          //change html
+          if (text.innerHTML == "Yes") {
+            text.innerHTML = "No";
+          } else {
+            text.innerHTML = "Yes";
+          }
+
+          //change css class using javascript
+          box.classList.toggle("opposite");
+        });
+    </script>
+  </body>
+</html>
