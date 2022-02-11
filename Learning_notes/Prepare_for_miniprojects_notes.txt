@@ -1,0 +1,32 @@
+choose folder
+then
+npm init // question twy may nay lyk ml may tr makhn chin yin
+npm init -y ko use
+install tin chin tr shi yin npmjs website mhr shr p install
+to check list type (npm list)
+package pyn delete chin yin (npm un package_name)
+folder mhrr delete lyk mi yin (npm install)
+
+what is libraries??
+owl carousel 2//slide
+animate.css
+sweetalert2
+isotope//gallery
+boostrap
+tailwind
+
+Beautify and Minify
+Beautify ka coding twy ace asin takya cee tr
+minify ka code twy ko ta kyaung htl mhr yay tr
+Beautify - developing version//style.css
+minify - production version //style.min.css
+
+Extension//
+LiveServer
+open with default browser ka // file protocol nk run nay tr fik pr tl
+internet pw ka pone san myo ko lo chin yin live server nk run//http: nk run
+<a tag mhr down so tk attribute ko liveserver mhr cha pay yin internet protocol nk run nay tr fik lo client ko download cha pay pr tl>
+
+vscode faker//thu ka img twy name twy ko lo chin thalo u lo ya
+
+box.classList.toggle() <- htote lyk htae lyk lok tr
