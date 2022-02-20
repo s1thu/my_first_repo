@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Test of Calculator</title>
+  </head>
+  <body>
+    <div class="display" id="display"></div>
+    <div class="btn" id="btn"></div>
+    <script>
+      let btn = document.getElementById("btn");
+      let display = document.getElementById("display");
+      let operators = ["+", "-", "*", "/", "="];
+      for (i = 0; i < 10; i++) {
+        btn.innerHTML += `<button onclick='displayText(${i})'>${i}</button>`;
+      }
+
+      //to display number
+      let displayText = (num) => {
+        display.innerText += num;
+      };
+
+      //from looping to display
+      operators.forEach(function (x) {
+        if (x == "=") {
+          btn.innerHTML += `<button onclick='calc()'>${x}</button>`;
+        } else {
+          btn.innerHTML += `<button onclick='displayText("${x}")'>${x}</button>`;
+        }
+      });
+
+      //to calculate
+      function calc() {
+        display.innerText = eval(display.innerText);
+      }
+    </script>
+  </body>
+</html>

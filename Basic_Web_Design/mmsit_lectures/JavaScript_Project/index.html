@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/Calculator/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Outfit:wght@300;400;600&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display"></div>
+      <div class="keypad">
+        <table>
+          <tr>
+            <td>
+              <div class="key" onclick="clearall()">AC</div>
+            </td>
+            <td><div class="key" onclick="clearlast()">C</div></td>
+            <td><div class="key" onclick="displaytext('%')">&#37;</div></td>
+            <td><div class="key" onclick="displaytext('/')">&#247;</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="key" onclick="displaytext(7)">7</div>
+            </td>
+            <td><div class="key" onclick="displaytext(8)">8</div></td>
+            <td><div class="key" onclick="displaytext(9)">9</div></td>
+            <td><div class="key" onclick="displaytext('*')">&#215;</div></td>
+          </tr>
+          <tr>
+            <td><div class="key" onclick="displaytext(4)">4</div></td>
+            <td><div class="key" onclick="displaytext(5)">5</div></td>
+            <td><div class="key" onclick="displaytext(6)">6</div></td>
+            <td><div class="key" onclick="displaytext('-')">&#8722;</div></td>
+          </tr>
+          <tr>
+            <td><div class="key" onclick="displaytext(1)">1</div></td>
+            <td><div class="key" onclick="displaytext(2)">2</div></td>
+            <td><div class="key" onclick="displaytext(3)">3</div></td>
+            <td><div class="key" onclick="displaytext('+')">&#43;</div></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <div class="key zero" onclick="displaytext(0)">0</div>
+            </td>
+            <td><div class="key" onclick="displaytext('.')">.</div></td>
+            <td><div class="key" onclick="calc()">&#61;</div></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="/Calculator/js/app.js"></script>
+  </body>
+</html>
