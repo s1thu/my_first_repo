@@ -1,5 +1,28 @@
-Introduction to SQL
+Introduction to SQL(Structure query language)
+4 types of query language
+-DDL (data definitation language)//table create/delete database create/delete
+-DML(data manipulation language)//insert update delete
+-DCL(data control language)
+-DQL(data query language)//select
 
+-----------------------------------------
+ACE OJT
+insert into databse.table_name (fields...) values (data..)
+update database.table_name set eg='this is example' where id=2;
+delete from database.table_name where id=2;
+select datauwant or *//togetalldata  from database.table_name;
+select * from  tablename where;//for one row
+
+**servlet is api
+
+JDBC(java database connectivity)
+
+
+
+
+
+
+--------------------------------------------
 Relational database-collection of tables
 Row-Record
 Column-Field
