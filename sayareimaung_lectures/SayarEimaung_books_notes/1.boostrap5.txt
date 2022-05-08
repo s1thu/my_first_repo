@@ -16,3 +16,20 @@ CSS margin//
 
 margin 2value: vertical_value Horizontal_value;
 margin 2vlaue:top horizontal_vlaue bottom;
+
+selectors//
+p {
+ padding: 10px;
+}
+.browser {
+ background: cyan;
+}
+#popular {
+ font-weight: bold;
+}
+input[type=text] {
+ width: 400px;
+}
+
+Position Absolute//
+top nae left ka position absolute mhr pl use lo ya

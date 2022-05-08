@@ -1,0 +1,14 @@
+.wrap {
+  display: flex;
+}
+.wrap div {
+  flex-grow: 1;
+  height: 200px;
+  background: cyan;
+  margin: 10px;
+  text-align: center;
+  line-height: 200px;
+}
+.wrap div:first-child {
+  flex-grow: 2;
+}
